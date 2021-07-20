@@ -64,7 +64,7 @@ if($num>0){
                 echo "<td>{$description}</td>";
                 echo "<td>";
                     // read one, edit and delete button will be here
-                    // read, edit and delete buttons//
+                    // read, edit and delete buttons
                     echo "
                     <a href='update_category.php?id={$id}' class='btn btn-default left-margin'>
                     <span class='glyphicon glyphicon-edit'></span> Edit
