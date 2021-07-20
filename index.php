@@ -75,7 +75,7 @@ if($num>0){
   
                 echo "<td>";
                     // read one, edit and delete button will be here
-                    // read, edit and delete buttons
+                    
                     echo "<a href='read_one.php?id={$id}' class='btn btn-primary left-margin'>
                     <span class='glyphicon glyphicon-list'></span> Read
                     </a>
