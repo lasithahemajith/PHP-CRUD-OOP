@@ -66,8 +66,7 @@ echo "</tr>";
         echo "<td>Quantity</td>";
         echo "<td>{$book->quantity}</td>";
     echo "</tr>";
-
-    
+  
 echo "</table>";
 
   

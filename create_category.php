@@ -26,7 +26,6 @@ echo "<div class='right-button-margin'>
   
 ?>
 <!-- 'create category' html form will be here -->
-<!-- PHP post code will be here -->
 <?php 
 // if the form was submitted - PHP OOP CRUD Tutorial
 if($_POST){

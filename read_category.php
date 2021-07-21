@@ -25,8 +25,6 @@ $category = new Category($db);
 $stmt = $category->readAll($from_record_num, $records_per_page);
 $num = $stmt->rowCount();
 
-
-
 // set page header
 $page_title = "Read Categories";
 include_once "layout_header.php";
@@ -43,8 +41,6 @@ echo "<div class='right-button'>
 echo "<div class='right-button-margin'>
     <a href='create_category.php' class='btn btn-default pull-left'>Create Category</a>
 </div>";
-
-
 
 // display the categories if there are any
 if($num>0){

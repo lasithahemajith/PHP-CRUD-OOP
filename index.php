@@ -25,8 +25,6 @@ $category = new Category($db);
 $stmt = $book->readAll($from_record_num, $records_per_page);
 $num = $stmt->rowCount();
 
-
-
 // set page header
 $page_title = "Read Books";
 include_once "layout_header.php";

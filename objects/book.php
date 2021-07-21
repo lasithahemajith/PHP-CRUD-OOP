@@ -69,6 +69,7 @@ class Book{
       
         return $stmt;
     }
+
     // used for paging books
     public function countAll(){
     
@@ -82,7 +83,7 @@ class Book{
         return $num;
     }
     
-
+    //read one book by id
     function readOne(){
   
         $query = "SELECT
@@ -107,6 +108,7 @@ class Book{
         $this->quantity = $row['quantity'];
     }
 
+    //update book by id
     function update(){
   
         $query = "UPDATE
@@ -119,7 +121,6 @@ class Book{
                     quantity = :quantity
                 WHERE
                     id = :id";
-      
         $stmt = $this->conn->prepare($query);
       
         // posted values
@@ -142,12 +143,11 @@ class Book{
         if($stmt->execute()){
             return true;
         }
-      
         return false;
           
     }
 
-    // delete the Book
+    // delete the Book by id
     function delete(){
   
         $query = "DELETE FROM " . $this->table_name . " WHERE id = ?";

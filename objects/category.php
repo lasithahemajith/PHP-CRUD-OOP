@@ -104,8 +104,9 @@ class Category{
     
         return $num;
     }
+
+    //read one category
     function readOne(){
-  
         $query = "SELECT
                     name, description
                 FROM
@@ -125,8 +126,8 @@ class Category{
         $this->description = $row['description'];
     }
 
+    // update category by id
     function update(){
-  
         $query = "UPDATE
                     " . $this->table_name . "
                 SET
@@ -151,13 +152,12 @@ class Category{
         if($stmt->execute()){
             return true;
         }
-      
         return false;
           
     }
+
     // delete the Category
     function delete(){
-  
         //$query = "DELETE FROM " . $this->table_name . " WHERE id = ?";
         $query = "DELETE FROM categories 
         WHERE id NOT IN (
@@ -173,9 +173,6 @@ class Category{
         }else{
             return false;
         }
-    }
-
-    
-  
+    }  
 }
 ?>

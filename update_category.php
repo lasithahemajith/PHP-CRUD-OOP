@@ -60,7 +60,6 @@ if($_POST){
 }
 ?>
 
-  
 <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"] . "?id={$id}");?>" method="post">
     <table class='table table-hover table-responsive table-bordered'>
   
